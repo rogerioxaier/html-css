@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -20,9 +21,26 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: antiquewhite;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky; 
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgrey;
         }
 
         td.num {
@@ -35,6 +53,9 @@
 
     <!--
         ANATOMIA PARA TABELAS GRANDES
+
+        CAPTION
+
         TABLE
             THEAD
                 TR, TD, TH
@@ -44,10 +65,12 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População da unidades federativas</caption>
+        
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -162,11 +185,17 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num">207.375.918
                 </td>
             </tr>
         </tfoot>
     </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, amet exercitationem quo perferendis, necessitatibus in dolores repudiandae odio laudantium fugiat vel eveniet iure voluptate corrupti temporibus repellendus sed minima quia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed hic perspiciatis in quia reiciendis, autem nobis beatae possimus. Magnam vel ex, asperiores incidunt delectus distinctio aspernatur architecto quae sit beatae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis dolore ea, esse ab voluptas autem nam rem a, dicta labore voluptate officiis dolorum quod impedit ipsam. Laborum, quam tenetur. Vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quaerat commodi corporis. Iure qui, dolore, aliquid odio, aut architecto praesentium molestias accusantium maiores soluta sequi consequuntur fuga ducimus ut tenetur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, amet exercitationem quo perferendis, necessitatibus in dolores repudiandae odio laudantium fugiat vel eveniet iure voluptate corrupti temporibus repellendus sed minima quia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed hic perspiciatis in quia reiciendis, autem nobis beatae possimus. Magnam vel ex, asperiores incidunt delectus distinctio aspernatur architecto quae sit beatae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis dolore ea, esse ab voluptas autem nam rem a, dicta labore voluptate officiis dolorum quod impedit ipsam. Laborum, quam tenetur. Vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quaerat commodi corporis. Iure qui, dolore, aliquid odio, aut architecto praesentium molestias accusantium maiores soluta sequi consequuntur fuga ducimus ut tenetur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, amet exercitationem quo perferendis, necessitatibus in dolores repudiandae odio laudantium fugiat vel eveniet iure voluptate corrupti temporibus repellendus sed minima quia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed hic perspiciatis in quia reiciendis, autem nobis beatae possimus. Magnam vel ex, asperiores incidunt delectus distinctio aspernatur architecto quae sit beatae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis dolore ea, esse ab voluptas autem nam rem a, dicta labore voluptate officiis dolorum quod impedit ipsam. Laborum, quam tenetur. Vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quaerat commodi corporis. Iure qui, dolore, aliquid odio, aut architecto praesentium molestias accusantium maiores soluta sequi consequuntur fuga ducimus ut tenetur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, amet exercitationem quo perferendis, necessitatibus in dolores repudiandae odio laudantium fugiat vel eveniet iure voluptate corrupti temporibus repellendus sed minima quia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed hic perspiciatis in quia reiciendis, autem nobis beatae possimus. Magnam vel ex, asperiores incidunt delectus distinctio aspernatur architecto quae sit beatae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis dolore ea, esse ab voluptas autem nam rem a, dicta labore voluptate officiis dolorum quod impedit ipsam. Laborum, quam tenetur. Vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quaerat commodi corporis. Iure qui, dolore, aliquid odio, aut architecto praesentium molestias accusantium maiores soluta sequi consequuntur fuga ducimus ut tenetur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, amet exercitationem quo perferendis, necessitatibus in dolores repudiandae odio laudantium fugiat vel eveniet iure voluptate corrupti temporibus repellendus sed minima quia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed hic perspiciatis in quia reiciendis, autem nobis beatae possimus. Magnam vel ex, asperiores incidunt delectus distinctio aspernatur architecto quae sit beatae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis dolore ea, esse ab voluptas autem nam rem a, dicta labore voluptate officiis dolorum quod impedit ipsam. Laborum, quam tenetur. Vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quaerat commodi corporis. Iure qui, dolore, aliquid odio, aut architecto praesentium molestias accusantium maiores soluta sequi consequuntur fuga ducimus ut tenetur?</p>
 </body>
 </html>
