@@ -9,7 +9,7 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        iframe {
+        iframe#tela {
             width: 95vw;
             height: 400px;
             border: 2px solid black;
@@ -21,14 +21,14 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptates esse quod veritatis hic aliquam dolore? Deserunt, at nihil! Sed a veritatis nulla architecto illum ipsa laborum laudantium praesentium fuga.</p>
 
     <ul>
-        <li><a href="paginas-extras/pag001.html">Primeira página</a></li>
-        <li><a href="#">Segunda página</a></li>
-        <li><a href="#">Terceira página</a></li>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
     </ul>
     
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae magni illum sequi minima perspiciatis aspernatur fuga recusandae unde quasi consequuntur cum distinctio, velit adipisci ratione, in possimus quas consequatur alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, veniam. Vero qui maxime sint incidunt dolorem accusamus, nisi omnis modi! Labore magnam in exercitationem rem, illum quis voluptas ab distinctio!</p>
 
-    <iframe src="">
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem maiores porro, vel consequatur qui, exercitationem blanditiis sapiente dolorem facere ut illo error! Non illo maxime deserunt magnam aspernatur aperiam eos.</p><img src='imagens/casa.png.png'>">
         <p>Infelizmente seu navegador não é compatível com isso.</p>
     </iframe>
 
