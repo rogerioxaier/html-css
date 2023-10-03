@@ -12,14 +12,8 @@ Grandes telas: acima de 1200px
 */
 
 @media print { /*IMPRESSÃO*/
-    * {
-        font-family: 'Courier New', Courier, monospace;
-    }
-
     body {
-        background-image: url(../imagens/back-print.jpg);
-        text-shadow: none;
-        color: black;
+        background-image: url(../imagens/icon-print.png);
     }
 
 }
